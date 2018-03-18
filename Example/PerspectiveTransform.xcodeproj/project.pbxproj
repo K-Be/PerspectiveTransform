@@ -18,6 +18,8 @@
 		4B4009952042575A00B7CE37 /* QuadrilateralCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4009942042575A00B7CE37 /* QuadrilateralCalc.swift */; };
 		4B4F23C72051068600482ABF /* CompareMethodsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F23C62051068600482ABF /* CompareMethodsSpec.swift */; };
 		4B611DD2204BE66F00F67E1E /* libopencv_imgproc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B611DD1204BE66F00F67E1E /* libopencv_imgproc.dylib */; };
+		4B714006205E16AC004441A8 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 4B714005205E16AA004441A8 /* Gemfile */; };
+		4B714008205E16E9004441A8 /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 4B714007205E16E8004441A8 /* Gemfile.lock */; };
 		4B74DB3C203BDA070030F41B /* MatrixSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* MatrixSpec.swift */; };
 		4B74DB3E203BDA070030F41B /* CATransform3Dfrom2DSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58ECF61C79C3C200F1BC00 /* CATransform3Dfrom2DSpec.swift */; };
 		4B74DB3F203BDA070030F41B /* CALayerTransformSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74DB2C203BAA1A0030F41B /* CALayerTransformSpec.swift */; };
@@ -80,6 +82,8 @@
 		4B58ECEE1C799C2A00F1BC00 /* BasisVectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasisVectorSpec.swift; sourceTree = "<group>"; };
 		4B58ECF61C79C3C200F1BC00 /* CATransform3Dfrom2DSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATransform3Dfrom2DSpec.swift; sourceTree = "<group>"; };
 		4B611DD1204BE66F00F67E1E /* libopencv_imgproc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.dylib; path = /usr/local/lib/libopencv_imgproc.dylib; sourceTree = "<absolute>"; };
+		4B714005205E16AA004441A8 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Gemfile; path = ../Gemfile; sourceTree = "<group>"; };
+		4B714007205E16E8004441A8 /* Gemfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Gemfile.lock; path = ../Gemfile.lock; sourceTree = "<group>"; };
 		4B74DB2C203BAA1A0030F41B /* CALayerTransformSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerTransformSpec.swift; sourceTree = "<group>"; };
 		4B74DB34203BD9C70030F41B /* Framework Unit Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Framework Unit Specs.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B74DB38203BD9C70030F41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -284,6 +288,8 @@
 				11CFEB20812B9CCCF8BF46FE /* LICENSE */,
 				4BA7B1481C7C7A0600933779 /* .travis.yml */,
 				4B42173E2047AA4100BA73C2 /* codecov.yml */,
+				4B714005205E16AA004441A8 /* Gemfile */,
+				4B714007205E16E8004441A8 /* Gemfile.lock */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -479,7 +485,9 @@
 				4BDEE374200049CD007214F1 /* with-overlay.svg in Resources */,
 				4BA7B1531C816DCE00933779 /* sky.jpg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				4B714008205E16E9004441A8 /* Gemfile.lock in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				4B714006205E16AC004441A8 /* Gemfile in Resources */,
 				4BA7B1521C816DCE00933779 /* container.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
