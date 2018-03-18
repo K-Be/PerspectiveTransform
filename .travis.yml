@@ -7,6 +7,7 @@ git:
   depth: false
 cache:
   cocoapods: true
+bundler_args: --no-deployment
 podfile: Example/Podfile
 matrix:
   include:
@@ -36,7 +37,6 @@ matrix:
       - yes | pip2 uninstall numpy > /dev/null
       - for package in opencv xz $(brew deps opencv); do brew link $package || brew install $package; done
       - bundle -v || gem install bundler
-    bundler_args: --no-deployment
     before_script:
       - pod update --project-directory=Example
       - git diff --exit-code # Outdated Cocoapods dependencies found, please run 'pod update' and checkin changes
