@@ -20,6 +20,8 @@
 		4B611DD2204BE66F00F67E1E /* libopencv_imgproc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B611DD1204BE66F00F67E1E /* libopencv_imgproc.dylib */; };
 		4B714006205E16AC004441A8 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 4B714005205E16AA004441A8 /* Gemfile */; };
 		4B714008205E16E9004441A8 /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 4B714007205E16E8004441A8 /* Gemfile.lock */; };
+		4B71400A205E21C9004441A8 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 4B714009205E21C9004441A8 /* Podfile.lock */; };
+		4B71400B205E2554004441A8 /* resetAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDEE37520005B6D007214F1 /* resetAnchorPoint.swift */; };
 		4B74DB3C203BDA070030F41B /* MatrixSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* MatrixSpec.swift */; };
 		4B74DB3E203BDA070030F41B /* CATransform3Dfrom2DSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58ECF61C79C3C200F1BC00 /* CATransform3Dfrom2DSpec.swift */; };
 		4B74DB3F203BDA070030F41B /* CALayerTransformSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74DB2C203BAA1A0030F41B /* CALayerTransformSpec.swift */; };
@@ -43,7 +45,6 @@
 		4BDEE37320004185007214F1 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDEE37220004185007214F1 /* PhotoViewController.swift */; };
 		4BDEE374200049CD007214F1 /* with-overlay.svg in Resources */ = {isa = PBXBuildFile; fileRef = 4B2D2E891C7C2E620045FD11 /* with-overlay.svg */; };
 		4BDEE37620005B6D007214F1 /* resetAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDEE37520005B6D007214F1 /* resetAnchorPoint.swift */; };
-		4BDEE37720005B6D007214F1 /* resetAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDEE37520005B6D007214F1 /* resetAnchorPoint.swift */; };
 		4BDF64A620469B350022C5F8 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF64A520469B350022C5F8 /* OpenCVWrapper.mm */; };
 		4BDF64A820469D140022C5F8 /* libopencv_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDF64A720469D140022C5F8 /* libopencv_core.dylib */; };
 		4BDF64AA20469D670022C5F8 /* libopencv_calib3d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDF64A920469D670022C5F8 /* libopencv_calib3d.dylib */; };
@@ -84,6 +85,7 @@
 		4B611DD1204BE66F00F67E1E /* libopencv_imgproc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.dylib; path = /usr/local/lib/libopencv_imgproc.dylib; sourceTree = "<absolute>"; };
 		4B714005205E16AA004441A8 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Gemfile; path = ../Gemfile; sourceTree = "<group>"; };
 		4B714007205E16E8004441A8 /* Gemfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Gemfile.lock; path = ../Gemfile.lock; sourceTree = "<group>"; };
+		4B714009205E21C9004441A8 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		4B74DB2C203BAA1A0030F41B /* CALayerTransformSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerTransformSpec.swift; sourceTree = "<group>"; };
 		4B74DB34203BD9C70030F41B /* Framework Unit Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Framework Unit Specs.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B74DB38203BD9C70030F41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				8E6BB167377E7674273158F4 /* PerspectiveTransform.podspec */,
+				4B714009205E21C9004441A8 /* Podfile.lock */,
 				4EA2244D76A3BF4D89D92FD5 /* README.md */,
 				11CFEB20812B9CCCF8BF46FE /* LICENSE */,
 				4BA7B1481C7C7A0600933779 /* .travis.yml */,
@@ -477,6 +480,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B71400A205E21C9004441A8 /* Podfile.lock in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				4BDEE374200049CD007214F1 /* with-overlay.svg in Resources */,
 				4BA7B1531C816DCE00933779 /* sky.jpg in Resources */,
@@ -715,11 +719,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B97C3CB2047BA5F004C9782 /* NimbleSpecHelper.swift in Sources */,
+				4B71400B205E2554004441A8 /* resetAnchorPoint.swift in Sources */,
 				4B4F23C72051068600482ABF /* CompareMethodsSpec.swift in Sources */,
 				4B2D2E871C7C2AD10045FD11 /* SnapshotSpec.swift in Sources */,
 				4BD09EB220478E5C006D2FA4 /* PerspectiveTransformSpecHelper.swift in Sources */,
 				4B74DB47203BDA9C0030F41B /* PerformanceTest.swift in Sources */,
-				4BDEE37720005B6D007214F1 /* resetAnchorPoint.swift in Sources */,
 				4B4009952042575A00B7CE37 /* QuadrilateralCalc.swift in Sources */,
 				4B97C3CE2047BAD3004C9782 /* AccelerateSolvePerfTest.swift in Sources */,
 			);

@@ -25,4 +25,15 @@ Pod::Spec.new do |s|
           'Nimble' => '~> 7.0'
       }
   end
+  s.test_spec 'AppSpecs' do |ts|
+      ts.requires_app_host = true
+      ts.platform          = :ios, '11.0'
+      ts.resources      = 'Example/Tests/**/*.{png,jpg,svg}'
+      ts.source_files   = 'Example/Tests/**/*.{h,swift}', 'Example/PerspectiveTransform/resetAnchorPoint.swift'
+      ts.dependencies   = {
+          'Quick' => '~> 1.2',
+          'Nimble-Snapshots' => '~> 6.3',
+          'FBSnapshotTestCase' => '~> 2.1'
+      }
+  end
 end
