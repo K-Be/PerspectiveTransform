@@ -737,11 +737,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B97C3C92047B9EF004C9782 /* NimbleSpecHelper.swift in Sources */,
 				4BD09EB320478E5C006D2FA4 /* PerspectiveTransformSpecHelper.swift in Sources */,
 				4B74DB42203BDA070030F41B /* BasisVectorSpec.swift in Sources */,
 				4B74DB41203BDA070030F41B /* PerspectiveSpec.swift in Sources */,
 				4B74DB3E203BDA070030F41B /* CATransform3Dfrom2DSpec.swift in Sources */,
-				4B97C3C92047B9EF004C9782 /* NimbleSpecHelper.swift in Sources */,
 				4B74DB45203BDA070030F41B /* VectorProjectionSpec.swift in Sources */,
 				4B74DB40203BDA070030F41B /* ProjectionSpec.swift in Sources */,
 				4B74DB3C203BDA070030F41B /* MatrixSpec.swift in Sources */,
