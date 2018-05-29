@@ -21,8 +21,8 @@ Pod::Spec.new do |s|
   s.test_spec 'UnitSpecs' do |ts|
       ts.source_files   = 'Example/Specs/**/*.{h,swift}', 'Example/Tests/*Helper.swift'
       ts.dependencies   = {
-          'Quick' => '~> 1.2',
-          'Nimble' => '~> 7.0'
+          'Quick' => '~> 1.3',
+          'Nimble' => '~> 7.1'
       }
   end
   s.test_spec 'AppSpecs' do |ts|
@@ -31,9 +31,9 @@ Pod::Spec.new do |s|
       ts.resources      = 'Example/Tests/**/*.{png,jpg,svg}'
       ts.source_files   = 'Example/Tests/**/*.{h,swift}', 'Example/PerspectiveTransform/resetAnchorPoint.swift'
       ts.dependencies   = {
-          'Quick' => '~> 1.2',
-          'Nimble-Snapshots' => '~> 6.3',
-          'FBSnapshotTestCase' => '~> 2.1'
+          'Quick' => '~> 1.3',
+          'Nimble-Snapshots' => '~> 6.7',
+          'iOSSnapshotTestCase' => '~> 3.0'
       }
   end
 end
