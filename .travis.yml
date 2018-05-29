@@ -72,3 +72,7 @@ before_install:
   - ls -la Example/Pods/Manifest.lock && echo Skipping cocoapods repo update || git -C ~/.cocoapods/repos/master/ pull --quiet
 script:
   - set -o pipefail && xcodebuild test -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" -destination "$XCODE_DESNITATION" | xcpretty -f `xcpretty-travis-formatter`
+env:
+  - XCODE_DESNITATION='platform=iOS Simulator,name=iPhone SE'
+  - XCODE_DESNITATION='platform=iOS Simulator,name=iPhone 8 Plus'
+  - XCODE_DESNITATION='platform=iOS Simulator,name=iPhone 8'
