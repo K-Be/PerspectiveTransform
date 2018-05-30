@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.cocoapods_version = '~> 1.4'
   s.name              = 'PerspectiveTransform'
-  s.version           = '0.2.0'
+  s.version           = '0.3.0'
   s.summary           = 'Perspective Transform calculates CATransform3D'
   s.description       = <<-DESC
   Calculates CATransform3D to transform rectangular frame to convex quadrilateral
@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
   end
   s.test_spec 'AppSpecs' do |ts|
       ts.requires_app_host = true
-      ts.platform          = :ios, '11.0'
       ts.resources      = 'Example/Tests/**/*.{png,jpg,svg}'
       ts.source_files   = 'Example/Tests/**/*.{h,swift}', 'Example/PerspectiveTransform/resetAnchorPoint.swift'
       ts.dependencies   = {
