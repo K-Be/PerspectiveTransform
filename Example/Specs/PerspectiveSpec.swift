@@ -9,11 +9,12 @@ class PerspectiveSpec: QuickSpec {
             context("debug description") {
                 it("should list all vectors") {
                     let perspective = Perspective(CGRect.zero)
-                    expect(String(describing: perspective)) == "Perspective: [\n"
-                    + "double3(0.0, 0.0, 1.0)\n"
-                    + "double3(0.0, 0.0, 1.0)\n"
-                    + "double3(0.0, 0.0, 1.0)\n"
-                    + "double3(0.0, 0.0, 1.0)\n"
+					let desc = String(describing: perspective)
+                    expect(desc) == "Perspective: [\n"
+                    + "SIMD3<Double>(0.0, 0.0, 1.0)\n"
+                    + "SIMD3<Double>(0.0, 0.0, 1.0)\n"
+                    + "SIMD3<Double>(0.0, 0.0, 1.0)\n"
+                    + "SIMD3<Double>(0.0, 0.0, 1.0)\n"
                     + "]"
                 }
             }

@@ -9,9 +9,9 @@
 import simd
 
 extension Vector3Type {
-    static let one = Vector3Type(ScalarType.one)
-    static let zero = Vector3Type(0)
-    static let lastIndex = Vector3Type().endIndex - 1
+		static let one = Vector3Type(repeating: ScalarType.one)
+		static let zero = Vector3Type(repeating: 0)
+    static let lastIndex = Vector3Type().indices.endIndex - 1
     static let indexSlice = 0...Vector3Type.lastIndex
     static let indexArray = Array(Vector3Type.indexSlice)
 }
